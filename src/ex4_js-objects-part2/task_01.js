@@ -3,7 +3,7 @@ var obj1 = Object.create(obj);
 obj1.d = 4;
 
 function f(obj1, key) {
-    if (key in obj1.__proto__) {
+    if (!obj1.hasOwnProperty(key)) {
         return true
     } else {
         return false
