@@ -1,8 +1,9 @@
 function trueOrFalse(arr) {
 
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = i + 1; j < arr.length; j++) {
-            if (arr[i] !== arr[j]) {
+
+    for (var i = 1; i < arr.length; i++) {
+        {
+            if (arr[i] !== arr[0]) {
                 return 'false'
             }
         }
@@ -11,4 +12,4 @@ function trueOrFalse(arr) {
     }
     return "true"
 }
-console.log(trueOrFalse([1, 1, 1, 1, 1, 1]))
+console.log(trueOrFalse([1, 1, 1, 5, 1, 1]))
