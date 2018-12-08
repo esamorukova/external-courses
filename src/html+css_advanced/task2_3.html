@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <style>
+        .element {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient( rgba(0, 128, 43, 0.582), rgba(84, 12, 99, 0.61));
+            border-radius: 50%;
+            left: calc(50% - 50px);
+            top: 250px;
+            animation-name: animation;
+            animation-iteration-count: infinite;
+            animation-duration: 15s;
+        }
+        
+        @keyframes animation {
+            15% {
+                border-radius: 0px;
+                background: radial-gradient( rgb(92, 167, 144), rgb(206, 134, 255)3, 255, 0));
+            }
+            20% {
+                background: radial-gradient( rgba(123, 104, 238, 0.582), rgba(60, 179, 113, 0.582));
+                width: 80px;
+                height: 80px;
+                transform: skewX(0deg);
+            }
+            35% {
+                width: 160px;
+                height: 160px;
+                transform: skewY(16deg);
+            }
+            40% {
+                transform: rotate(0deg);
+            }
+            65% {
+                transform: rotate(180deg);
+            }
+            80% {
+                border-radius: 0px;
+                width: 160px;
+                height: 160px;
+            }
+            100% {
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="element"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        #ballWrapper {
+            width: 150px;
+            height: 300px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin: -150px 0 0 -70px;
+        }
+        
+        .blok {
+            display: inline-block;
+        }
+        
+        #border {
+            position: relative;
+            left: 5px;
+            height: 70px;
+            width: 20px;
+            background: red;
+        }
+        
+        #ball {
+            border: 0;
+            margin: 0;
+            width: 40%;
+            height: 20%;
+            position: absolute;
+            border-radius: 70%;
+            animation: jump 2s ease infinite;
+            background: rebeccapurple;
+        }
+        
+        @keyframes jump {
+            0%,
+            100% {
+                transform: translate(0)
+            }
+            25% {
+                transform: translate(180%)
+            }
+            50% {
+                transform: translate(0)
+            }
+            75% {
+                transform: translate( 180%)
+            }
+        }
+        
+        #border_left {
+            position: relative;
+            left: 167px;
+            height: 70px;
+            width: 20px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="ballWrapper">
+        <div class='blok' id='border'></div>
+        <div class='blok' id="ball"></div>
+        <div class='blok' id='border_left'></div>
+    </div>
+
+
+
+</html>
