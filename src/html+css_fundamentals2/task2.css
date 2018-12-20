@@ -1,0 +1,21 @@
+.table {
+    width: 750;
+    height: 600;
+    font: 12pt sans-serif;
+    color: #191970;
+    text-align: center;
+}
+
+.even {
+    background-color: rgba(220, 220, 220, 0.5);
+    opacity: 0.7;
+}
+
+.odd {
+    background-color: #B0C4DE;
+    opacity: 0.7;
+}
+
+.col1 {
+    text-transform: capitalize
+}
